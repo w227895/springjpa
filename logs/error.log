@@ -1,5 +1,5 @@
-15:16:13.729 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orgController': Unsatisfied dependency expressed through field 'orgService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orgService': Unsatisfied dependency expressed through field 'orgDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orgDao': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract void com.kebo.springjpa.dao.OrgDao.deleteByOid(java.lang.String)! No property oid found for type Org!
+16:20:24.414 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'leagueController': Unsatisfied dependency expressed through field 'leagueService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'leagueService': Unsatisfied dependency expressed through field 'leagueDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'leagueDao': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract void com.kebo.springjpa.dao.LeagueDao.updateLeagueNameByLeagueOid(java.lang.String,java.lang.String)! No property updateLeagueNameByLeagueOid found for type League!
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
 	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:397)
@@ -20,7 +20,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
 	at com.kebo.springjpa.SpringjpaApplication.main(SpringjpaApplication.java:13)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orgService': Unsatisfied dependency expressed through field 'orgDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orgDao': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract void com.kebo.springjpa.dao.OrgDao.deleteByOid(java.lang.String)! No property oid found for type Org!
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'leagueService': Unsatisfied dependency expressed through field 'leagueDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'leagueDao': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract void com.kebo.springjpa.dao.LeagueDao.updateLeagueNameByLeagueOid(java.lang.String,java.lang.String)! No property updateLeagueNameByLeagueOid found for type League!
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
 	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:397)
@@ -36,7 +36,7 @@ Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Err
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:636)
 	... 19 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orgDao': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract void com.kebo.springjpa.dao.OrgDao.deleteByOid(java.lang.String)! No property oid found for type Org!
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'leagueDao': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract void com.kebo.springjpa.dao.LeagueDao.updateLeagueNameByLeagueOid(java.lang.String,java.lang.String)! No property updateLeagueNameByLeagueOid found for type League!
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1803)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
@@ -49,7 +49,7 @@ Caused by: org.springframework.beans.factory.BeanCreationException: Error creati
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:636)
 	... 32 common frames omitted
-Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract void com.kebo.springjpa.dao.OrgDao.deleteByOid(java.lang.String)! No property oid found for type Org!
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract void com.kebo.springjpa.dao.LeagueDao.updateLeagueNameByLeagueOid(java.lang.String,java.lang.String)! No property updateLeagueNameByLeagueOid found for type League!
 	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:103)
 	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:106)
 	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:211)
@@ -78,7 +78,7 @@ Caused by: java.lang.IllegalArgumentException: Failed to create query for method
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
 	... 42 common frames omitted
-Caused by: org.springframework.data.mapping.PropertyReferenceException: No property oid found for type Org!
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property updateLeagueNameByLeagueOid found for type League!
 	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94)
 	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:382)
 	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:358)
@@ -107,6 +107,6 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
 	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
 	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:381)
-	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:96)
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:93)
 	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:96)
 	... 68 common frames omitted
