@@ -57,6 +57,11 @@
             <appender-ref ref="INFO_FILE" />
             <appender-ref ref="ERROR_FILE" />
         </logger>
+        <logger name="org.springframework" level="ERROR" additivity="false">
+            <appender-ref ref="STDOUT" />
+            <appender-ref ref="INFO_FILE" />
+            <appender-ref ref="ERROR_FILE" />
+        </logger>
     </springProfile>
 
     <springProfile name="test,prod">

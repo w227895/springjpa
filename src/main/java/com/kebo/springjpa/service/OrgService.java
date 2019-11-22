@@ -19,4 +19,12 @@ public class OrgService {
     public Org findByOrgOid(String orgOid) {
         return orgDao.findByOrgOid(orgOid);
     }
+
+    public void updateNameById(String id,String name){
+         orgDao.updateNameById(id,name);
+    }
+
+    public void deleteByOid(String orgOid){
+        orgDao.deleteByOrgOid(orgOid);
+    }
 }

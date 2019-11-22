@@ -1,4 +1,4 @@
-15:16:13.729 [main] ERROR o.s.boot.SpringApplication - Application run failed
+15:12:45.509 [main] ERROR o.s.boot.SpringApplication - Application run failed
 org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orgController': Unsatisfied dependency expressed through field 'orgService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orgService': Unsatisfied dependency expressed through field 'orgDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orgDao': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract void com.kebo.springjpa.dao.OrgDao.deleteByOid(java.lang.String)! No property oid found for type Org!
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
 	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
