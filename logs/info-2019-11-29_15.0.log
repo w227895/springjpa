@@ -1,0 +1,179 @@
+15:52:00.202 [main] INFO  c.k.springjpa.SpringjpaApplication - Starting SpringjpaApplication on PC-20190712NYZB with PID 145636 (C:\Users\Administrator\Desktop\springjpa\target\classes started by Administrator in C:\Users\Administrator\Desktop\springjpa)
+15:52:00.208 [main] DEBUG c.k.springjpa.SpringjpaApplication - Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+15:52:00.209 [main] INFO  c.k.springjpa.SpringjpaApplication - The following profiles are active: dev
+15:52:01.376 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+15:52:01.423 [main] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+15:52:01.425 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+15:52:01.425 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+15:52:01.425 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+15:52:01.425 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+15:52:01.426 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+15:52:01.426 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+15:52:01.426 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+15:52:01.426 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+15:52:01.426 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+15:52:01.427 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+15:52:01.427 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."com.mysql.jdbc.Driver"
+15:52:01.427 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+15:52:01.427 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+15:52:01.427 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+15:52:01.427 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+15:52:01.427 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+15:52:01.427 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:mysql://192.168.1.127:3306/fns?characterEncoding=utf-8&&nullCatalogMeansCurrent=true&&serverTimezone=GMT
+15:52:01.427 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+15:52:01.427 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+15:52:01.428 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+15:52:01.428 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+15:52:01.428 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+15:52:01.428 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+15:52:01.428 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+15:52:01.428 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+15:52:01.428 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+15:52:01.428 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+15:52:01.428 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+15:52:01.428 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+15:52:01.428 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+15:52:01.428 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+15:52:01.429 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................"root"
+15:52:01.429 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+15:52:01.429 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:52:01.429 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:52:01.430 [main] DEBUG c.z.hikari.util.DriverDataSource - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+15:52:01.561 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31da3d60
+15:52:01.563 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:52:01.663 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+15:52:01.668 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4acb2c31
+15:52:01.672 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@bf6260a
+15:52:01.675 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a372cda
+15:52:01.680 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6bd9d945
+15:52:01.684 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30669d47
+15:52:01.688 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f97c62d
+15:52:01.694 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a85623d
+15:52:01.698 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@188a1aa7
+15:52:01.701 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f087483
+15:52:01.701 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+15:52:03.219 [main] INFO  c.k.springjpa.SpringjpaApplication - Started SpringjpaApplication in 3.514 seconds (JVM running for 4.165)
+15:52:31.665 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:53:01.666 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:53:31.666 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:54:01.668 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:54:24.986 [main] INFO  c.k.springjpa.SpringjpaApplication - Starting SpringjpaApplication on PC-20190712NYZB with PID 145892 (C:\Users\Administrator\Desktop\springjpa\target\classes started by Administrator in C:\Users\Administrator\Desktop\springjpa)
+15:54:24.988 [main] DEBUG c.k.springjpa.SpringjpaApplication - Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+15:54:24.988 [main] INFO  c.k.springjpa.SpringjpaApplication - The following profiles are active: dev
+15:54:25.993 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+15:54:26.032 [main] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+15:54:26.032 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+15:54:26.032 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+15:54:26.033 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+15:54:26.033 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+15:54:26.033 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+15:54:26.033 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+15:54:26.033 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+15:54:26.033 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+15:54:26.033 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+15:54:26.033 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+15:54:26.033 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."com.mysql.jdbc.Driver"
+15:54:26.033 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+15:54:26.033 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+15:54:26.033 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+15:54:26.033 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+15:54:26.033 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+15:54:26.035 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:mysql://192.168.1.127:3306/fns?characterEncoding=utf-8&&nullCatalogMeansCurrent=true&&serverTimezone=GMT
+15:54:26.035 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+15:54:26.035 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+15:54:26.035 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+15:54:26.035 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+15:54:26.035 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+15:54:26.035 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+15:54:26.035 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+15:54:26.035 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+15:54:26.035 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+15:54:26.035 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+15:54:26.035 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+15:54:26.035 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+15:54:26.035 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+15:54:26.035 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+15:54:26.035 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................"root"
+15:54:26.035 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+15:54:26.035 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:54:26.037 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:54:26.037 [main] DEBUG c.z.hikari.util.DriverDataSource - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+15:54:26.147 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@288cdaab
+15:54:26.148 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:54:26.250 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+15:54:26.253 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5dc3ba6f
+15:54:26.257 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1cfeb054
+15:54:26.258 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d28ad10
+15:54:26.262 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7cd14f1b
+15:54:26.265 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a3fbd8e
+15:54:26.267 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@789f5763
+15:54:26.271 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e2b8d95
+15:54:26.274 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56e2c16c
+15:54:26.278 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@395ddf83
+15:54:26.278 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+15:54:27.540 [main] INFO  c.k.springjpa.SpringjpaApplication - Started SpringjpaApplication in 2.886 seconds (JVM running for 3.504)
+15:54:56.251 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:55:02.117 [main] INFO  c.k.springjpa.SpringjpaApplication - Starting SpringjpaApplication on PC-20190712NYZB with PID 146084 (C:\Users\Administrator\Desktop\springjpa\target\classes started by Administrator in C:\Users\Administrator\Desktop\springjpa)
+15:55:02.120 [main] DEBUG c.k.springjpa.SpringjpaApplication - Running with Spring Boot v2.2.1.RELEASE, Spring v5.2.1.RELEASE
+15:55:02.120 [main] INFO  c.k.springjpa.SpringjpaApplication - The following profiles are active: dev
+15:55:03.168 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+15:55:03.209 [main] DEBUG com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+15:55:03.210 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+15:55:03.210 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+15:55:03.210 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+15:55:03.210 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+15:55:03.211 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+15:55:03.211 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+15:55:03.211 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+15:55:03.211 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+15:55:03.211 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+15:55:03.211 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+15:55:03.211 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."com.mysql.jdbc.Driver"
+15:55:03.212 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+15:55:03.212 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+15:55:03.212 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+15:55:03.212 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+15:55:03.212 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+15:55:03.212 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:mysql://192.168.1.127:3306/fns?characterEncoding=utf-8&&nullCatalogMeansCurrent=true&&serverTimezone=GMT
+15:55:03.212 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+15:55:03.212 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+15:55:03.212 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+15:55:03.212 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+15:55:03.212 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+15:55:03.212 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+15:55:03.212 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+15:55:03.212 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+15:55:03.212 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+15:55:03.212 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+15:55:03.213 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+15:55:03.213 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+15:55:03.213 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+15:55:03.213 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+15:55:03.213 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................"root"
+15:55:03.213 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+15:55:03.213 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:55:03.214 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+15:55:03.214 [main] DEBUG c.z.hikari.util.DriverDataSource - Driver class com.mysql.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+15:55:03.323 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9a6fbc0
+15:55:03.323 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:55:03.425 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+15:55:03.429 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@734ed90e
+15:55:03.432 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3273d335
+15:55:03.435 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38b6592
+15:55:03.438 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@525c2c7a
+15:55:03.442 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e384310
+15:55:03.445 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5612128f
+15:55:03.448 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67aa3578
+15:55:03.452 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c0d9abd
+15:55:03.455 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7cfc7fcb
+15:55:03.455 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+15:55:04.721 [main] INFO  c.k.springjpa.SpringjpaApplication - Started SpringjpaApplication in 3.004 seconds (JVM running for 3.537)
+15:55:33.426 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:56:03.427 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:56:33.428 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:57:03.429 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:57:33.431 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:58:03.432 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:58:33.434 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:59:03.435 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+15:59:33.437 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)

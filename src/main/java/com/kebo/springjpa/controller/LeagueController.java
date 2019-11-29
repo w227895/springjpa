@@ -5,8 +5,14 @@ import com.kebo.springjpa.po.Result;
 import com.kebo.springjpa.po.StatusCode;
 import com.kebo.springjpa.service.LeagueService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.serializer.RedisSerializer;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * @description:
@@ -19,6 +25,8 @@ import org.springframework.web.bind.annotation.*;
 public class LeagueController {
     @Autowired
     private LeagueService leagueService;
+    @Autowired
+    private RedisTemplate<Object,Object> redisTemplate;
 
     @GetMapping(value = "/{leagueOid}")
     public Result findByLeagueOid(@PathVariable String leagueOid) {
@@ -47,7 +55,16 @@ public class LeagueController {
 
     @GetMapping(value="/{page}/{size}")
     public Result findAll(@PathVariable int page, @PathVariable int size){
-        return new Result(true,StatusCode.OK,"查询成功",leagueService.findAll(page,size));
+        RedisSerializer redisSerializer=new StringRedisSerializer();
+        redisTemplate.setKeySerializer(redisSerializer);
+        Page<League> leagueList= (Page<League>) redisTemplate.opsForValue().get("allLeague");
+        System.out.println("从缓存中取出");
+        if(leagueList==null){
+            System.out.println("从数据库中取出");
+            leagueList=leagueService.findAll(page,size);
+            redisTemplate.opsForValue().set("allLeague",leagueList);
+        }
+        return new Result(true,StatusCode.OK,"查询成功",leagueList);
     }
 
 }
